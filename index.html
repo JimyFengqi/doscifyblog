@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>凤起丶宛南</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" />
+</head>
+<body>
+<script>
+    window.$docsify = {
+		maxAge: 100,
+		notFoundPage: 'README.md',        // 找不到页面返回位置
+		homepage: 'README.md',
+		name: '凤起丶宛南',                 //侧边栏标题名字
+		repo: 'jimyfengqi/docsify_blog',  // Github corner 挂件
+		loadNavbar: true,                 // 导航栏支持，默认加载的是项目根目录下的_navbar.md文件
+        mergeNavbar: true,                // 小屏设备下合并导航栏到侧边栏
+		loadSidebar: true,                // 侧边栏支持，默认加载的是项目根目录下的_sidebar.md文件
+		subMaxLevel: 3,                   // 配置目录副标题级数 3级
+		sidebarDisplayLevel: 2,           // set sidebar display level
+		maxLevel: 3,                      // 默认情况下会抓取文档中所有标题渲染成目录，可配置最大支持渲染的标题层级
+
+		coverpage: true,                  // 配置封面
+        auto2top: true,                   // 切换页面后是否自动跳转到页面顶部
+
+        // 外链表达式
+        externalLinkTarget: '_blank',
+
+        alias: {                                    // 定义路由别名，可以更自由的定义路由规则。 支持正则
+        '/.*/_sidebar.md': '/_sidebar.md'           //防止意外回退
+        },
+
+        scrollToTop: {  //返回顶部按钮
+          auto: true,   //是否自动隐藏按钮
+          text: 'Top',  //按钮文字
+          right: 15,    //按钮距离窗口右侧距离
+          bottom: 15,   //按钮距离窗口底部距离
+          offset: 800   //页面滚动多少距离后显示按钮，当auto配置为true时才有效果
+        },
+        search: {       //增加搜索框
+            paths: 'auto',
+            placeholder: {
+                '/': '全文搜索'
+            },
+            noData: {
+                '/': '找不到结果'
+            },
+            // Headline depth, 1 - 6
+            depth: 6
+        },
+
+        //字数统计设置
+        count: {
+            countable: true,
+            fontsize: '1.2em',
+            color: '#ff6700',
+            language: 'chinese',
+            id: "count_info",
+            localization: {
+                words: "100",
+                minute: "100"
+            },
+        },
+
+        // 文章尾部内容
+        footer: {
+            copy: '<span>凤起丶宛南 &copy; 2021. </span>',
+            auth: 'All rights reserved',
+            style: 'text-align: right;',
+            class: 'className',
+        }
+    }
+  </script>
+<div id="app">Loading...</div>
+  <!-- Docsify v4.4.3 -->
+  <!-- docsify的js依赖 -->
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <!-- 搜索功能支持 -->
+  <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+  <!-- 图片缩放插件,放大缩小支持 -->
+  <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
+  <!--在所有的代码块上添加一个简单的Click to copy按钮来允许用户从你的文档中轻易地复制代码-->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+  <!--字数统计-->
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+
+  <!-- 代码语法高亮添加 -->
+  <script src="//unpkg.com/prismjs/components/prism-java.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-python.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-bash.js"></script>
+  <!-- emoji表情支持 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+  <!--分页导航插件  上一篇/下一篇 -->
+  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <!-- 返回顶部 -->
+  <script src="//unpkg.com/docsify-scroll-to-top/dist/docsify-scroll-to-top.min.js"></script>
+  <!-- 侧边栏折叠 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+
+</body>
+</html>
+
