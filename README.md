@@ -41,7 +41,7 @@ docsify serve docs
 打开 index.html 文件，在 body 标签中添加 nav 标签，如下所示：
 
   <nav>
-      <a href="https://songzixian.com/">宋子宪博客</a>
+      <a href="https://www.baidu.com/">百度一下</a>
   </nav>
 
 保存后，就可以在浏览器上查看到效果。
